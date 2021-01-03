@@ -1,0 +1,231 @@
+<!---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat App</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="chat.css">
+</head>
+<body>
+ ---> 
+
+{% extends "blog/base.html" %}
+{% block content %}
+  <div class="chat-body">
+    <div class="chat-chat-body">
+      <div id="chat-chat-container">
+        <div id="chat-search-container"> 
+          <input type="text" placeholder="Search"/>
+        </div>
+
+        <div id="chat-conversation-list"> 
+          <div class="chat-conversation active">
+            <img src="../../../media/img/profiles/girl6.png" alt="Sasha Sharma"/>
+            <div class="chat-title-text">
+              SashaS
+            </div>
+            <div class="chat-created-date">
+              Jul 5
+            </div>
+            <div class="chat-conversation-message">
+              Yeah sure I’ll have it ready by then. See you later Sasha.
+            </div>
+          </div> 
+
+          <div class="chat-conversation">
+            <img src="../../../media/img/profiles/girl1.jpg" alt="Emily Hanson"/>
+            <div class="chat-title-text">
+              EmilyTrack
+            </div>
+            <div class="chat-created-date">
+              Jul 5
+            </div>
+            <div class="chat-conversation-message">
+              Goodbye!
+            </div>
+          </div> 
+
+          <div class="chat-conversation">
+            <img src="../../../media/img/profiles/boy1.png" alt="Johnathan Brooke"/>
+            <div class="chat-title-text">
+              JonathanFitness
+            </div>
+            <div class="chat-created-date">
+              Jul 5
+            </div>
+            <div class="chat-conversation-message">
+              Let’s meet online to work out.
+            </div>
+          </div> 
+
+          <div class="chat-conversation">
+            <img src="../../../media/img/profiles/girl2.png" alt="Taliyah Thornton"/>
+            <div class="chat-title-text">
+              lolTaliyah
+            </div>
+            <div class="chat-created-date">
+              Jul 4
+            </div>
+            <div class="chat-conversation-message">
+              Call me sometime!
+            </div>
+          </div> 
+
+          <div class="chat-conversation">
+            <img src="../../../media/img/profiles/boy2.png" alt="Ward Trace"/>
+            <div class="chat-title-text">
+              TopManTrace
+            </div>
+            <div class="chat-created-date">
+              Jul 4
+            </div>
+            <div class="chat-conversation-message">
+              Hey bro, how's cardio?
+            </div>
+          </div> 
+
+          <div class="chat-conversation">
+            <img src="../../../media/img/profiles/boy3.png" alt="Mariano Gulotta"/>
+            <div class="chat-title-text">
+              Mariririano
+            </div>
+            <div class="chat-created-date">
+              Jul 4
+            </div>
+            <div class="chat-conversation-message">
+              I’ve gone vegan for a while
+            </div>
+          </div> 
+
+          <div class="chat-conversation">
+            <img src="../../../media/img/profiles/girl5.jpg" alt="Velvet Groesbeck"/>
+            <div class="chat-title-text">
+              VelvetRoses
+            </div>
+            <div class="chat-created-date">
+              Jul 4
+            </div>
+            <div class="chat-conversation-message">
+              I’ve lost 20 pounds in this last month
+            </div>
+          </div> 
+          <div class="chat-conversation">
+            <img src="../../../media/img/profiles/girl4.png" alt="Armandina Mahurin"/>
+            <div class="chat-title-text">
+              Armandinaaaa
+            </div>
+            <div class="chat-created-date">
+              Jul 4
+            </div>
+            <div class="chat-conversation-message">
+              Thank you for the advice.
+            </div>
+          </div>
+          <div class="chat-conversation">
+            <img src="../../../media/img/profiles/boy5.png" alt="William James"/>
+            <div class="chat-title-text">
+              WillJay
+            </div>
+            <div class="chat-created-date">
+              Jul 4
+            </div>
+            <div class="chat-conversation-message">
+              See you tomorrow!
+            </div>
+          </div>
+
+        </div>
+
+        <div id="chat-new-message-container"> 
+         <a href="#">+</a>
+        </div>
+        <div id="chat-title"> 
+          <span>SashaS</span>
+          <img src="../../../media/img/icons/trash.png" alt ="Delete Conversation"/>
+        </div>
+        <div id="chat-message-list"> 
+          <div class="chat-message-row you-message">
+            <div class="chat-message-content">
+              <div class="chat-message-text">Yeah sure I’ll have it ready by then. See you later Sasha.</div>
+              <div class="chat-message-time">10:24 a.m.</div>
+            </div>
+          </div>
+          <div class="chat-message-row other-message">
+            <div class="chat-message-content">
+              <img src="../../../media/img/profiles/girl6.png" alt="Sasha Sharma"/>
+              <div class="chat-message-text">
+                Awesome can you send me a good schedule for the Intermittent Fasting after we finish our workout tomorrow on here?
+              </div>
+              <div class="chat-message-time">10:18 a.m.</div>
+            </div>
+          </div>
+          <div class="chat-message-row you-message">
+            <div class="chat-message-content">
+              <div class="chat-message-text">People who are malnourished, underweight, or nutrient deficient should probably avoid this diet. So unless you have problems of those kinds you are good to go.</div>
+              <div class="chat-message-time">10:16 a.m.</div>
+            </div>
+          </div>
+          <div class="chat-message-row other-message">
+            <div class="chat-message-content">
+              <img src="../../../media/img/profiles/girl6.png" alt="Sasha Sharma"/>
+              <div class="chat-message-text">
+                Wow you taught me so many things about it! Are there many downsides to this as well or is it completely safe?
+              </div>
+              <div class="chat-message-time">10:16 a.m.</div>
+            </div>
+          </div>
+          <div class="chat-message-row you-message">
+            <div class="chat-message-content">
+              <div class="chat-message-text">Yeah it is! Intermittent fasting is generally very successful for weight loss. It has been shown in various studies to cause weight loss of approximately 3–8% over a period of 3–24 weeks, which is a lot compared to most weight loss diets. Also Animal studies also suggest that it may help new brain cells grow, lengthen lifespan, and protect against Alzheimer's disease and cancer.</div>
+              <div class="chat-message-time">10:15 a.m.</div>
+            </div>
+          </div>
+          <div class="chat-message-row other-message">
+            <div class="chat-message-content">
+              <img src="../../../media/img/profiles/girl6.png" alt="Sasha Sharma"/>
+              <div class="chat-message-text">
+                Oh thats cool. So is it very good for losing weight?
+              </div>
+              <div class="chat-message-time">10:10 a.m.</div>
+            </div>
+          </div>
+          <div class="chat-message-row you-message">
+            <div class="chat-message-content">
+              <div class="chat-message-text">Intermittent fasting cycles your body between periods of fasting and eating.</div>
+              <div class="chat-message-time">10:00 a.m.</div>
+            </div>
+          </div>
+          <div class="chat-message-row other-message">
+            <div class="chat-message-content">
+              <img src="../../../media/img/profiles/girl6.png" alt="Sasha Sharma"/>
+              <div class="chat-message-text">
+                Oh I’ve heard about it in the past, how does it work?
+              </div>
+              <div class="chat-message-time">Jul 4</div>
+            </div>
+          </div>
+          <div class="chat-message-row you-message">
+            <div class="chat-message-content">
+              <div class="chat-message-text">Hey Sasha long time no see. For me personally a diet that has worked well for me in the past is Intermittent Fasting. </div>
+              <div class="chat-message-time">Jul 4</div>
+            </div>
+          </div>
+          <div class="chat-message-row other-message">
+            <div class="chat-message-content">
+              <img src="../../../media/img/profiles/girl6.png" alt="Sasha Sharma"/>
+              <div class="chat-message-text">
+                Hey Isshana, I wanted to speak to you regarding my diet. I think my exercising is great, but as they say a great workout can never beat a bad diet. What do you think I should do for my diet and what has worked for you in the past?
+              </div>
+              <div class="chat-message-time">Jul 4</div>
+            </div>
+          </div>
+        </div>
+        <div id="chat-form"> 
+          <img src="../../../media/img/icons/paperclip.png" alt="Add Attachment"/>
+          <input type='text' placeholder="type a message"/>
+        </div>
+      </div>
+    </div>
+  </div>   
+{% endblock %}

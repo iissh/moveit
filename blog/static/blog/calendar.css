@@ -1,0 +1,98 @@
+.cal-body{
+  margin:0;
+  padding:0;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  height:100vh;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.calendar{
+  position: relative;
+  background:#fff;
+  width:800px;
+  height:600px;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  border:15px solid #fff;
+  border-radius: 15px;
+  box-shadow:0 15px 35px rgba(0, 0, 0, 0.5);
+}
+.calendar .cal-event{
+  margin:10px 30px 10px 0px;
+  padding:5px;
+  text-align:left;
+  color:#000;
+  font-weight: bold;
+  width: 330px;
+  border-radius:10px;
+  border:2px solid rgb(188, 248, 248);
+  background-color: rgb(188, 248, 248);
+}
+.calendar .cal-event:hover{
+  background:#54DEF1;
+  border:2px solid#54DEF1;
+}
+.calendar .cal-date{
+  margin-top: -50px;
+  width:400px;
+  padding:30px;
+  box-sizing: border-box;
+}
+
+.calendar .cal-date h3{
+  margin:0 0 20px;
+  padding:0;
+  font-size:24px;
+  font-weight:500;
+  text-align: center;
+}
+
+.calendar .cal-date .cal-days{
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.calendar .cal-date .cal-days .cal-day,
+.calendar .cal-date .cal-days .cal-num{
+  width:48px;
+  height:48px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}  
+.calendar .cal-date .cal-days .cal-day:first-child,
+.calendar .cal-date .cal-days .cal-num:nth-child(7n+1)
+{
+  color:#B938FA;
+  font-weight: 600;
+}
+
+.calendar .cal-date .cal-days .cal-num.active
+{
+  background:#54DEF1;
+  color:#fff;
+  cursor:pointer;
+  border-radius: 50%;
+}
+
+.calendar .cal-image{
+  position: absolute;
+  top:0;
+  right:0;
+  width:400px;
+  height:100%;
+  background:#fff;
+} 
+
+.calendar .cal-image img{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius: 20px;
+} 

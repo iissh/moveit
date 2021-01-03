@@ -1,0 +1,15 @@
+{% extends "blog/base.html" %}
+{% block content %}
+    <div class="logout-background">
+        <div class="logout-box">
+            <h2>You Have Been Successfully Logged Out</h2>
+            <div class="logout-row2">
+                <img id="logout-img1" src="../../../media/img/icons/vectorlogout1.png">
+                <div class="login-button">
+                    <a href="{% url 'login' %}">Log In Again</a>
+                </div>
+                <img id="logout-img2" src="../../../media/img/icons/vectorlogout2.png">
+            </div>
+        </div>    
+    </div>
+{% endblock content %}

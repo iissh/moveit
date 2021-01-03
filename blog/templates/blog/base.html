@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}">
+
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@900&family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+  {% if title %}
+    <title>MOVEIT! - {{ title }}</title>
+  {% else %}
+    <title>MOVEIT!</title>
+  {% endif %}
+</head>
+<body>
+  <header>
+    <div class="nav-logo-container">
+      <img src="../../../media/img/logo.png"> <!-- REPLACE WITH LOGO-->
+    </div>
+    
+    <nav class="nav-container">
+        <a href="{% url 'blog-home' %}">Home</a>
+        <a href="{% url 'blog-about' %}">About</a>
+      <!-- Navbar Right Side THIS WORKS IF USER IS LOGGED IN -->
+      {% if user.is_authenticated %}
+        <a href="{% url 'blog-fitness' %}">Fitness</a>
+        <a href="{% url 'blog-mentalhealth' %}">Mental Health</a>
+        <a href="{% url 'blog-calendar' %}">Calendar</a>
+        <a href="{% url 'post-create' %}">New Post</a>
+        <a href="{% url 'blog-chat' %}">Chat</a>
+      {% endif %}
+    </nav>
+
+    <div class ="nav-right-container">
+      {% if user.is_authenticated %} 
+      <a class="nav-right" href="{% url 'profile' %}">Profile</a>
+      <a class="nav-right" href="{% url 'logout' %}">Logout</a>
+    {% else %}
+      <a class="nav-right" href="{% url 'login' %}">Login</a>
+      <a class="nav-right" href="{% url 'register' %}">Register</a>
+    {% endif %}
+    </div>
+  </header>
+  
+<main role="main" class="container">
+  <div>
+    <div>
+      {% if messages %}
+        {% for message in messages %}
+          <div class="alert alert-{{message.tags}}">
+            {{message}}
+          </div> 
+        {%endfor%}
+      {% endif %}
+      {% block content %}{% endblock %}
+    </div>
+  </div>
+</main>
+</body>
+</html>

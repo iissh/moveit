@@ -1,0 +1,39 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<div class="about-header">
+  <h1>ABOUT <img src="../../../media/img/logonoborder.png"></h1>
+  <button class="aboutbtn-btn1"><a href="{% url 'register' %}">Join Us</a></button>
+  <button class="aboutbtn-btn2" ><a href="{% url 'login' %}">Log In</a></button>
+</div>  
+<div class="about-aboutus">
+  <h2>About Us</h2>
+  <p>Our social networking site MoveIt! is a recently innovated social media platform designed to assist the people of Canada to live healthier lives. There are no judgements here. We seek only to encourage, empower, and entertain people with their health and quality of life with confidence. We foster a culture of constant teaching, learning and development so that you can grow both mentality and physically as an individual. </p>
+  <img class="about-img1" src="../../../media/img/other/aboutimg1.jpg">
+</div>  
+<div class="about-goals">
+  <h2>Our Goals</h2>
+  <p>Our goal is to use this platform to promote healthy living in Canada, using popular aspects of several social media, giving the users options to post, share and comment on MoveIt! MoveIt will promote healthy diets, workouts that can be done at home and help promote awareness regarding mental health within these very stressful times.  </p>
+  <img class="about-img2" src="../../../media/img/other/aboutimg2.jpg">
+</div> 
+<div class="about-tmbg">
+  <section id="about-teammembers">
+    <div class="about-container">
+      <h2>Team Members</h2>
+      <div class="about-box">
+        <img  src="../../../media/img/profiles/isshana.png">
+        <h4>Isshana Mohanakumar</h4>
+        <p>Hey! I'm Isshana and I am a developer for 'MoveIt!'. I worked on the frontend, backend, and design for our social networking site. As a part of this team, I was primarily responsible for developing the framework, design, and layout of the website.</p>
+      </div>
+      <div class="about-box">
+        <img class="about-logoimg" src="../../../media/img/logoshadow.png">
+      </div>
+      <div class="about-box">
+        <img  src="../../../media/img/profiles/abhay.png">
+        <h4>Abhayjit Sodhi</h4>
+        <p>
+          Hi! I'm Abhayjit and I am a script writer for 'MoveIt!'. I was responsible for creating the written content on our social platform for the test users.</p>
+      </div>
+    </div>
+  </div> 
+</div>  
+{% endblock content %}
