@@ -15,6 +15,12 @@ This social-networking platform was created using Django for the backend and HTM
 <br/>
 <br/>
 <br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 ### Password Reset 
 <img align="left" src="media/img/other/passwordreset.png" width="480" height="auto"/> Forgot your password? That's okay, Click "Forgot Password?" under the Login section and enter your email. Then you can create a new password through there.
 <br/> 
