@@ -16,7 +16,7 @@ This social-networking platform was created using Django for the backend and HTM
 <br/> <br/> <br/> <br/> <br/> <br/> 
 ### View all posts by a User 
 <img align="left" src="media/img/other/viewpostsbyusers.gif"/> <br/> <br/> Curious about the posts your peers have been posting? Just click their username to see everything they have posted.
-<br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
+<br/> <br/> <br/> <br/> <br/> <br/> <br/> 
 ### Highly User-friendly 
 The website has no hidden tricks. It is super easy to navigate and has customizable features to always keep the experience fresh.
 
