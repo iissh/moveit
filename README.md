@@ -9,7 +9,7 @@ This social-networking platform was created using Django for the backend and HTM
 
 ## Notable Features
 #### Change your username and email.
-<img align="left" src="media/imgs/other/viewpostsbyusers.gif"/>
+<img align="left" src="media/img/other/viewpostsbyusers.gif"/>
 - Password Reset - Forgot your password? That's okay, just enter your email and you can create a new password through there.
 - View all posts by a User - Curious about the posts your peers have been posting? Just click their username to see everything they have posted.
 - Highly User-friendly - The website has no hidden tricks. It is super easy to navigate and has customizable features to always keep the experience fresh.
