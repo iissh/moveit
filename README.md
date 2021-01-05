@@ -9,18 +9,8 @@ This social-networking platform was created using Django for the backend and HTM
 
 ## Notable Features
 #### Change profile picture, username and email.
-<img align="left" src="media/img/other/viewpostsbyusers.gif"/> You can change your profile picture, username and email whenever you want! Just click the profile tab and enter the new ones.
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img align="left" src="media/img/other/viewpostsbyusers.gif"/> <br/> <br/> You can change your profile picture, username and email whenever you want! Just click the profile tab and enter the new ones.
+<br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
 ### Password Reset 
 <img align="left" src="media/img/other/passwordreset.png" width="480" height="auto"/> Forgot your password? That's okay, Click "Forgot Password?" under the Login section and enter your email. Then you can create a new password through there.
 <br/> 
